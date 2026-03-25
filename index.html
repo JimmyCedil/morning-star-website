@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Star Cleaning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                        <!----------------NAV--------------------->
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+              <!-- LOGO SVG — inline recreation of Morning Star Cleaning logo -->
+              <img src="images/officalLogo.png" alt="Morning Star Cleaning Logo" class="logo">
+
+              <div class="logo-text-wrap">
+                <span class="logo-text-top">Morning Star</span>
+                <span class="logo-text-bottom">Cleaning</span>
+              </div>
+            </a>
+         
+            <ul class="nav-links">
+              <li><a href="#services">Services</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+            </ul>
+         
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+          <div class="mobile-nav" id="mobile-nav">
+            <a href="#services" onclick="closeMobile()">Services</a>
+            <a href="#pricing"  onclick="closeMobile()">Pricing</a>
+            <a href="#about"    onclick="closeMobile()">About</a>
+            <a href="#contact"  onclick="closeMobile()" class="mobile-cta">Get a Quote</a>
+          </div>
+    </nav>
+
+                         <!-------------------HERO--------------------->
+    <section style="padding: 0;">
+        <div class="container hero">
+            <div class="hero-left">
+              <div class="hero-badge">★ Professional Cleaning Services</div>
+              <h1>Your Home Deserves to <span>Shine</span> Like a Star</h1>
+              <p class="hero-sub">
+                Morning Star Cleaning delivers thorough, reliable, and eco-friendly cleaning
+                services for homes and offices. We treat every space with care and precision.
+              </p>
+              <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Get a Free Quote</a>
+                <a href="#services" class="btn-outline">Our Services</a>
+              </div>
+              <div class="hero-stats">
+                <div>
+                  <div class="stat-num">100+</div>
+                  <div class="stat-label">Happy Clients</div>
+                </div>
+                <div>
+                  <div class="stat-num">5 yrs</div>
+                  <div class="stat-label">Experience</div>
+                </div>
+                <div>
+                  <div class="stat-num">100%</div>
+                  <div class="stat-label">Satisfaction</div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-right">
+              <div class="hero-img-card">
+                  <img src="images/image1.png" alt="Clean home" style="width:100%; object-fit: cover;">
+              </div>
+              <div class="hero-floating-badge">
+                ✦ Fully Insured &amp; Bonded
+              </div>
+            </div>
+          </div>
+    </section>
+
+                        <!---------------SERVICES--------------->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="center reveal">
+              <div class="section-tag">What We Do</div>
+              <h2>Services Tailored<br>For Every Space</h2>
+              <p class="section-sub">
+                From weekly maintenance to one-time deep cleans, we've got every corner covered.
+              </p>
+            </div>
+            <div class="services-grid">
+              <div class="service-card reveal">
+                <div class="service-icon">🏠</div>
+                <h3>Residential Cleaning</h3>
+                <p>Regular home cleaning tailored to your schedule — vacuuming, mopping, bathrooms, kitchens, and more.</p>
+              </div>
+              <div class="service-card reveal">
+                <div class="service-icon">🔬</div>
+                <h3>Deep Cleaning</h3>
+                <p>A thorough top-to-bottom clean for move-ins, move-outs, or seasonal refreshes. No corner left untouched.</p>
+              </div>
+              <div class="service-card reveal">
+                <div class="service-icon">🏢</div>
+                <h3>Commercial Cleaning</h3>
+                <p>Professional cleaning for offices, retail spaces, and businesses — scheduled around your hours.</p>
+              </div>
+              <div class="service-card reveal">
+                <div class="service-icon">✨</div>
+                <h3>Post-Construction</h3>
+                <p>Specialized cleanup after renovations — removing dust, debris, and residue so your space shines.</p>
+              </div>
+              <div class="service-card reveal">
+                <div class="service-icon">🪟</div>
+                <h3>Window Cleaning</h3>
+                <p>Crystal-clear windows inside and out, letting in more light and giving your home an instant facelift.</p>
+              </div>
+              <div class="service-card reveal">
+                <div class="service-icon">🎉</div>
+                <h3>Event Cleanup</h3>
+                <p>Before or after your big event, we'll have the space looking perfect so you can focus on the fun.</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+                             <!----------PRICING------------->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="center reveal">
+              <div class="section-tag">Simple Pricing</div>
+              <h2>Transparent,<br>No-Surprise Rates</h2>
+              <p class="section-sub">
+                Every plan includes our satisfaction guarantee. Not sure? Get a custom quote.
+              </p>
+            </div>
+            <div class="pricing-grid">
+              <!-- Basic -->
+              <div class="pricing-card reveal">
+                <div class="plan-name">Basic</div>
+                <div class="plan-price"><sup>$</sup>150</div>
+                <div class="plan-desc">per visit · up to 2 bedrooms</div>
+                <ul class="plan-features">
+                  <li>Vacuuming &amp; mopping</li>
+                  <li>Bathroom cleaning</li>
+                  <li>Kitchen wipe-down</li>
+                  <li>Dusting surfaces</li>
+                  <li>Trash removal</li>
+                </ul>
+                <a href="#contact" class="plan-btn">Book Basic</a>
+              </div>
+              <!-- Standard (featured) -->
+              <div class="pricing-card featured reveal">
+                <div class="popular-badge">Most Popular</div>
+                <div class="plan-name">Standard</div>
+                <div class="plan-price"><sup>$</sup>200</div>
+                <div class="plan-desc">per visit · up to 4 bedrooms</div>
+                <ul class="plan-features">
+                  <li>Everything in Basic</li>
+                  <li>Interior window cleaning</li>
+                  <li>Appliance exteriors</li>
+                  <li>Baseboards &amp; ceiling fans</li>
+                  <li>Optional laundry folding</li>
+                </ul>
+                <a href="#contact" class="plan-btn">Book Standard</a>
+              </div>
+              <!-- Deep Clean -->
+              <div class="pricing-card reveal">
+                <div class="plan-name">Deep Clean</div>
+                <div class="plan-price"><sup>$</sup>280</div>
+                <div class="plan-desc">one-time · full home</div>
+                <ul class="plan-features">
+                  <li>Everything in Standard</li>
+                  <li>Inside fridge &amp; oven</li>
+                  <li>Inside cabinets &amp; drawers</li>
+                  <li>Grout &amp; tile scrubbing</li>
+                  <li>Move-in / move-out ready</li>
+                </ul>
+                <a href="#contact" class="plan-btn">Book Deep Clean</a>
+              </div>
+            </div>
+          </div>
+    </section>
+
+                    <!-------------------ABOUT--------------------->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+              <div class="about-logo-display reveal">
+                <!-- Big logo centered -->
+                 
+                <img src="images/officalLogo.png" alt="offical morning star logo" style="width:100%; object-fit: cover;" >
+              </div>
+              <div class="about-content reveal">
+                <div class="section-tag">About Us</div>
+                <h2>More Than Cleaning —<br>It's Care</h2>
+                <p>
+                  We started Morning Star Cleaning because everyone deserves to come home to a
+                  clean, peaceful space. With years of experience and hundreds of satisfied clients,
+                  our reputation is built on trust, reliability, and results.
+                </p>
+                <p>
+                  Every team member is background-checked, trained, and genuinely passionate about
+                  what they do. We use eco-friendly products safe for kids, pets, and the planet.
+                </p>
+                <div class="trust-grid">
+                  <div class="trust-item">
+                    <div class="trust-icon">🌿</div>
+                    <div>
+                      <strong>Eco-Friendly</strong>
+                      <span>Safe, green products only</span>
+                    </div>
+                  </div>
+                  <div class="trust-item">
+                    <div class="trust-icon">🔐</div>
+                    <div>
+                      <strong>Background Checked</strong>
+                      <span>Fully vetted team</span>
+                    </div>
+                  </div>
+                  <div class="trust-item">
+                    <div class="trust-icon">⏰</div>
+                    <div>
+                      <strong>Always On Time</strong>
+                      <span>We respect your schedule</span>
+                    </div>
+                  </div>
+                  <div class="trust-item">
+                    <div class="trust-icon">💯</div>
+                    <div>
+                      <strong>Guaranteed</strong>
+                      <span>100% satisfaction promise</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+                                <!--------------------TESTIMONIALS-------------->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="center reveal">
+              <div class="section-tag">Client Reviews</div>
+              <h2>What Our Clients Say</h2>
+              <p class="section-sub">Real feedback from real customers who trust Morning Star.</p>
+            </div>
+            <div class="testimonials-grid">
+              <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <blockquote>"They transformed my home before a dinner party. Everything was spotless and smelled amazing. I've been booking monthly ever since!"</blockquote>
+                <div class="reviewer">
+                  <div class="reviewer-avatar">👩</div>
+                  <div>
+                    <div class="reviewer-name">Sarah M.</div>
+                    <div class="reviewer-loc">Charlotte, NC</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <blockquote>"Incredibly professional and thorough. They cleaned areas I didn't even think to mention. Worth every penny — highly recommend!"</blockquote>
+                <div class="reviewer">
+                  <div class="reviewer-avatar">👨</div>
+                  <div>
+                    <div class="reviewer-name">James T.</div>
+                    <div class="reviewer-loc">Concord, NC</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <blockquote>"Used them for a move-out clean and got my full security deposit back. Their deep clean is absolutely top-tier. So grateful!"</blockquote>
+                <div class="reviewer">
+                  <div class="reviewer-avatar">👩</div>
+                  <div>
+                    <div class="reviewer-name">Maria L.</div>
+                    <div class="reviewer-loc">Mint Hill, NC</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+                                        <!---------------CONTACT---------------->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+              <div class="reveal">
+                <div class="section-tag">Get in Touch</div>
+                <h2>Ready for a<br>Cleaner Home?</h2>
+                <p style="color:var(--gray);font-weight:300;line-height:1.75;margin-top:1rem;">
+                  Fill out the form and we'll get back to you within 24 hours to confirm your booking.
+                  First-time customers get <strong style="color:var(--purple-pale)">10% off</strong>!
+                </p>
+                <div class="contact-details">
+                  <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                      <strong>Phone</strong>
+                      <span>(704) 298-2526</span>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                      <strong>Email</strong>
+                      <span>morningstarcleaning1@gmail.com</span>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                      <strong>Service Area</strong>
+                      <span>Charlotte &amp; surrounding areas</span>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <div>
+                      <strong>Hours</strong>
+                      <span>Mon – Sat, 8am – 6pm</span><!-- ← Update -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form reveal">
+                <h3>Book Your Cleaning ★</h3>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Jane" />
+                  </div>
+                  <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Smith" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" placeholder="jane@email.com" />
+                </div>
+                <div class="form-group">
+                  <label>Phone</label>
+                  <input type="tel" placeholder="(704) 555-0000" />
+                </div>
+                <div class="form-group">
+                  <label>Service Type</label>
+                  <select>
+                    <option value="">Select a service…</option>
+                    <option>Residential Cleaning</option>
+                    <option>Deep Cleaning</option>
+                    <option>Commercial Cleaning</option>
+                    <option>Post-Construction</option>
+                    <option>Window Cleaning</option>
+                    <option>Event Cleanup</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Message / Special Requests</label>
+                  <textarea placeholder="Tell us about your home, pets, specific areas, etc."></textarea>
+                </div>
+                <button class="submit-btn">Send Booking Request ★</button>
+              </div>
+            </div>
+          </div>
+    </section>
+
+                                        <!---------------FOOTER---------------->
+    <footer>
+        <div class="footer-inner">
+            <a href="#" class="footer-logo">
+                
+              <span style="font-family:var(--font-display);font-size:0.9rem;color:var(--purple-pale);letter-spacing:0.1em;">MORNING STAR CLEANING</span>
+            </a>
+            <span class="footer-copy">© 2026 Morning Star Cleaning. All rights reserved.</span>
+            <div class="footer-links">
+              <a href="#services">Services</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+    </footer>
+
+                                <!-- ══ JS ═════════════════════════════════════════════ -->
+    <script>
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+   
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileNav.classList.toggle('open');
+        });
+   
+        function closeMobile() {
+            hamburger.classList.remove('open');
+            mobileNav.classList.remove('open');
+        }
+   
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    bserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+   
+        reveals.forEach(el => observer.observe(el));
+   
+        // Smooth close on nav link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', closeMobile);
+        });
+  </script>
+    
+</body>
+</html>
